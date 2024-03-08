@@ -5,24 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de login</title>
     <link rel="stylesheet" href="estilos/style.css">
-    
-</head>
+    <link rel="stylesheet" href="estilos/mstyle.css">
+    <link rel="stylesheet" href="estilos/tstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    </head>
 <body>
-    <section>
-        <h1>
-            Login
-        </h1>
+    
+    <main>
+        <section>
+            <h1>
+                Login
+            </h1>
+            <form action="login.php" method="post" autocomplete="off">
+                <p>
+                    <label for="username">Icon</label>
+                    <input type="text" name="username" id="username" minlength="3" maxlength="15" required  placeholder="Username">
+                </p>
+                <p>
+                    <label for="password">Icon</label>
+                    <input type="password" name="password" id="password" minlength="8" required placeholder="Password">
+                </p>
+            </form>
+        
+            <a href="#">Esqueci minha senha</a>
+            <a href="#">Cadastrar</a>
+        </section>
+    </main>
 
-        <form action="login.php">
-
-            <label for="username">Username:</label>
-            <input type="text" name="username" id="username">
-
-
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password">
-
-        </form>
-    </section>
 </body>
 </html>

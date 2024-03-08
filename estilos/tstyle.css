@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*Cfgs telas medias*/
+
+@media screen and (min-width: 768px) {
+
+    body {
+        background: linear-gradient(to top, var(--cor01), var(--cor02), black)
+    }
+
+    section {
+        height: 600px;
+        width: 600px;
+        min-height: 350px;
+        max-height: 350px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        border-radius: 10px;
+        background: var(--cor03);
+    }
+    
+    section > h1 {
+        text-align: center;
+        padding: 5px 0 15px;
+        font-family: var(--fonte01);
+        font-size: 2.5rem;
+    }
+    
+}
