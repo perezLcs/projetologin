@@ -17,9 +17,62 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
+html, body {
     height: 100vh;
 }
+
+body{
+    background: var(--cor06) url(../imagens/fundo-p.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+section {
+    height: 500px;
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.062);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.493)
+}
+
+section > h1 {
+    text-align: center;
+    padding: 5px 0 15px;
+    font-family: var(--fonte01);
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+}
+
+section > form {
+    text-align: center;
+    font-family: var(--fonte02);
+}
+
+span.material-symbols-rounded {
+    font-size: 2em;
+    font-variation-settings: 'OPSZ' 2em;
+}
+
+/*.imagem {
+    width: 340px;
+    height: 220px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 0 0 15px 10px;
+    background: url(../imagens/login.jpg);
+    background-size: cover;
+    border-top: 2px solid var(--cor02);
+}*/
+
 

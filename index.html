@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
     </head>
 <body>
     
@@ -20,18 +21,36 @@
                 Login
             </h1>
             <form action="login.php" method="post" autocomplete="off">
+
                 <p>
-                    <label for="username">Icon</label>
+                    <label for="username">
+                        <span class="material-symbols-rounded">
+                        person
+                        </span>
+                    </label>
                     <input type="text" name="username" id="username" minlength="3" maxlength="15" required  placeholder="Username">
                 </p>
+
                 <p>
-                    <label for="password">Icon</label>
+                    <label for="password">
+                        <span class="material-symbols-rounded">
+                        password
+                        </span>
+                    </label>
                     <input type="password" name="password" id="password" minlength="8" required placeholder="Password">
+                </p>
+
+                <p>
+                    <label for="remember">Remember me</label>
+                    <input type="checkbox" name="remember" id="remember">
+                    <a href="#">Esqueci minha senha</a>
                 </p>
             </form>
         
-            <a href="#">Esqueci minha senha</a>
             <a href="#">Cadastrar</a>
+            <a href="#"><span class="material-symbols-rounded">login</span></a>
+
+            <div class="imagem"></div>
         </section>
     </main>
 
