@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de login</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/mstyle.css">
+    <link rel="stylesheet" href="estilos/gstyle.css">
     <link rel="stylesheet" href="estilos/tstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,33 +22,37 @@
             </h1>
             <form action="login.php" method="post" autocomplete="off">
 
-                <p>
-                    <label for="username">
-                        <span class="material-symbols-rounded">
-                        person
-                        </span>
-                    </label>
-                    <input type="text" name="username" id="username" minlength="3" maxlength="15" required  placeholder="Username">
-                </p>
+                    <div class="campo">
+                        <label for="username" class="icon">
+                            <span class="material-symbols-rounded">
+                            person
+                            </span>
+                        </label>
+                        <input type="text" name="username" id="username" minlength="3" maxlength="15" required  placeholder="Username">
+                    </div>
 
-                <p>
-                    <label for="password">
-                        <span class="material-symbols-rounded">
-                        password
-                        </span>
-                    </label>
-                    <input type="password" name="password" id="password" minlength="8" required placeholder="Password">
-                </p>
+                    <div class="campo">
+                        <label for="password" class="icon">
+                            <span class="material-symbols-rounded">
+                            password
+                            </span>
+                        </label>
+                        <input type="password" name="password" id="password" minlength="8" required placeholder="Password">
+                    </div>
 
-                <p>
-                    <label for="remember">Remember me</label>
-                    <input type="checkbox" name="remember" id="remember">
-                    <a href="#">Esqueci minha senha</a>
-                </p>
+                    <div>
+                        <label for="remember">Remember me</label>
+                        <input type="checkbox" name="remember" id="remember">
+                    </div>
+
+                    <input type="submit" value="Login">                                
             </form>
         
-            <a href="#">Cadastrar</a>
-            <a href="#"><span class="material-symbols-rounded">login</span></a>
+            <a href="#" class="forgot">Forgot your password?</a>
+
+            <p>
+                Don't have an account? <a href="#">Sign-up</a>
+            </p>
 
             <div class="imagem"></div>
         </section>

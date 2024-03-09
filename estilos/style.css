@@ -22,6 +22,12 @@
 
 html, body {
     height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
 }
 
 body{
@@ -30,49 +36,129 @@ body{
 }
 
 section {
-    height: 500px;
+    display: block;
+    height: 400px;
     width: 320px;
+    margin: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: var(--fonte02);
     padding: 10px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.062);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(0, 0, 0, 0.493)
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    
+    transition: width 0.2s, height 0.2s;
+    transition-timing-function: ease;
 }
 
 section > h1 {
-    text-align: center;
+    margin-left: 10px;
     padding: 5px 0 15px;
     font-family: var(--fonte01);
     font-size: 2.5rem;
-    color: white;
+    color: var(--cor01);
     text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-}
-
-section > form {
     text-align: center;
-    font-family: var(--fonte02);
 }
 
-span.material-symbols-rounded {
+section > p {
+    margin-top: 70px;
+    text-align: center;
+    color: var(--cor01);
+}
+section a {
+    text-decoration: none;
+    color: var(--cor04);
+}
+
+section a:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+    transition: 0.6s;
+}
+
+/*span.material-symbols-rounded {
     font-size: 2em;
     font-variation-settings: 'OPSZ' 2em;
+}*/
+
+form > div.campo {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    border-radius: 40px;
+    overflow: hidden;
 }
 
-/*.imagem {
-    width: 340px;
-    height: 220px;
+div.campo span {
+    color: var(--cor06);
+    padding: 5px;
+    background: var(--cor03);
+    font-size: 2em;
+}
+
+div.campo > input {
+    font-size: 1em;
+    border: none;
+    width: calc(100% - 43px);
+    height: 100%;
+    transform: translateY(-11px);
+    padding: 5px;
+    margin-left: -3px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+form {
+    margin-left: 10px;
+}
+
+form > div > label {
+    color: var(--cor01);
+}
+
+form > input[type=submit] {
+    display: block;
+    padding: 5px 30px 5px;
+    margin: auto;
+    margin-top: 25px;
+    font: 700 1.5em var(--fonte02);
+    border-radius: 50px;
+    border: none;
+    color: var(--cor06);
+    background: var(--cor03);
+}
+
+form > input[type=text] {
+    background: var(--cor02);
+}
+
+form > input[type=submit]:hover {
+    background: var(--cor04);
+    transform: scale(1.4);
+    transition: 0.4s;
+}
+
+.forgot {
+    display: block; 
     position: absolute;
-    left: 0;
-    bottom: 0;
-    border-radius: 0 0 15px 10px;
-    background: url(../imagens/login.jpg);
-    background-size: cover;
-    border-top: 2px solid var(--cor02);
-}*/
+    left: 50%;
+    translate: -45%;
+    text-decoration: none;   
+    color: var(--cor04);
+    padding: 5px;
+}
+
+.forgot:hover {
+    transform: scale(1.2);
+    text-decoration: underline;
+    transition: 0.6s;
+}
 
 

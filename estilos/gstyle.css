@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-/*Cfgs telas medias*/
-
-@media screen and (min-width: 768px) and (max-width:992px) {
+@media screen and (min-width:992px) {
 
     body {
         background: var(--cor06) url(../imagens/fundo-g.jpg) no-repeat fixed;
@@ -10,10 +8,10 @@
     }
 
     section {
-        height: 450px;
+        height: 500px;
         width: 90vw;
-        max-width: 800px;
-        min-width: 700px;
+        max-width: 1200px;
+        min-width: 992px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -22,8 +20,18 @@
         border-radius: 10px;
         overflow: hidden;
         text-align: left;
+
+
     }
 
+    span.material-symbols-rounded {
+        font-size: 2.5em;
+        font-variation-settings: 'OPSZ' 2.5em;
+    }   
+
+    .icon {
+        padding-top: 25px;
+    }
    
     section > h1 {
         padding: 5px 0 15px;
@@ -37,35 +45,41 @@
         margin-left: 11%;
     }
 
+    section > form > p {
+        margin-top: 5px;
+    }
+
     div.campo {
-        margin-top: 3px;
+        margin-top: 5px;
     }
 
     form > div.campo {
-        width: 45%;
+        width: 38%;
     }
 
+
     .icon {
-        margin: 0;
+        margin: 0px;
+        margin-top: 5px;
     }
 
     div.imagem {
-        display: block;
         position: absolute;
         right: 0;
         top: 0;
         background: var(--cor06) url(../imagens/login.jpg) no-repeat center center;
         background-size: cover;
         height: 600px;
-        width: 50%;
+        width: 60%;
     }
-    
+
     form > input[type=submit] {
         margin-left: 15%;
         margin-bottom: 10px;
     }
 
     .forgot {
-        left: 23%;
+        left: 20%;
+
     }
 }
